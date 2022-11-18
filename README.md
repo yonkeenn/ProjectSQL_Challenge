@@ -1,5 +1,11 @@
 # ProjectSQL_Challenge_1
 
+1. Connect with container SQL + alpine: create a docket file. Output in docker-hub, for later usage
+2. Connect with dbeaver-ce
+3. Use sql script
+4. Connect with tableau for seeing insights.
+
+
 ## Case Study Questions
 Each of the following case study questions can be answered using a single SQL statement:
 
