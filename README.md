@@ -1,3 +1,7 @@
+# Theory
+
+From -> Where -> GroupBy -> Having -> Select -> OrderBy -> Limit
+
 # ProjectSQL_Challenge_1
 
 1. Connect with container SQL + alpine: create a docket file. Output in docker-hub, for later usage
