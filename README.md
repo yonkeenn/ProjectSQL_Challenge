@@ -1,14 +1,17 @@
-# Theory
+# SQL Challenge Project
 
-From -> Where -> GroupBy -> Having -> Select -> OrderBy -> Limit
+The aim of this project is to join all the SQL chanllenges from this source [].
 
-# ProjectSQL_Challenge_1
+# Project scheme
 
 1. Connect with container SQL + alpine: create a docket file. Output in docker-hub, for later usage
 2. Connect with dbeaver-ce
 3. Use sql script
 4. Connect with tableau for seeing insights.
 
+# ProjectSQL_Challenge_1
+
+## Background
 
 ## Case Study Questions
 Each of the following case study questions can be answered using a single SQL statement:
@@ -25,3 +28,4 @@ Each of the following case study questions can be answered using a single SQL st
 - In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi 
 - how many points do customer A and B have at the end of January?
 
+# Usage
