@@ -9,6 +9,13 @@ The aim of this project is to join all the SQL chanllenges from this source [].
 3. Use sql script
 4. Connect with tableau for seeing insights.
 
+# Elements
+
+- API Javascript
+- MySQL database
+- Tableau
+- Docker
+
 # ProjectSQL_Challenge_1
 
 ## Background
