@@ -77,9 +77,8 @@ getapi(api_url);
 
 // Server side
 
-// const app = express();
-// app.listen(3000, () => console.log('Listening at port: 3000'));
-// app.use(express.static('src'));
+const app = express();
+app.listen(3000, () => console.log('Listening at port: 3000'));
+app.use(express.static('src'));
 
 
-setInterval(getapi, 1000);
