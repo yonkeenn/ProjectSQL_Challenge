@@ -1,3 +1,5 @@
+-- Table creation
+
 CREATE DATABASE dannys_diner;
 CREATE SCHEMA dannys_diner;
 SET search_path = dannys_diner;
@@ -57,3 +59,12 @@ INSERT INTO members
 VALUES
   ('A', '2021-01-07'),
   ('B', '2021-01-09');
+
+
+  -- Answers
+
+  select * 
+  from menu
+  where product_id = 1
+  order by price;
+  
