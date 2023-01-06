@@ -1,7 +1,12 @@
 import fetch from 'node-fetch';
 import fs from "fs";
-// import express, { application } from 'express';
+import express, { application } from 'express';
 import pg from 'pg';
+
+// Express
+
+const app = express();
+app.listen(3000, () => console.log('Listening at port 3000'))
 
 // Database connection
 
