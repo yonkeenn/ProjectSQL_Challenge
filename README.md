@@ -37,9 +37,17 @@ Each of the following case study questions can be answered using a single SQL st
 
 # Usage
 
-# ProjectSQL_Challenge_1
+# ProjectSQL_Challenge_2
 
 ## Background
+
+Employee database with the following tables:
+- t_employees
+- t_salaries
+- t_dept_manager
+- t_deparments
+- t_dept_emp
+- 
 
 ## Case Study Questions
 
