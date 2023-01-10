@@ -36,3 +36,11 @@ Each of the following case study questions can be answered using a single SQL st
 - how many points do customer A and B have at the end of January?
 
 # Usage
+
+# ProjectSQL_Challenge_1
+
+## Background
+
+## Case Study Questions
+
+Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
