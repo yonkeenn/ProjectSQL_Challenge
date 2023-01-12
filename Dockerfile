@@ -1,3 +1,3 @@
 FROM mysql
 
-WORKDIR /databases
+WORKDIR $PATH
