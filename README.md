@@ -1,13 +1,13 @@
-# SQL Challenge Project
+# Twitter Data Project
 
-The aim of this project is to join all the SQL chanllenges from this source [].
+The aim of this project is analyze real Twitter data from its API and generate some insigths.
 
 # Project scheme
 
-1. Connect with container SQL + alpine: create a docket file. Output in docker-hub, for later usage
-2. Connect with dbeaver-ce
-3. Use sql script
-4. Connect with tableau for seeing insights.
+1. Fetch data from Twitter API using the search endpoint.
+2. Save data into SQL database localy and save it into a cloud.
+3. Extract data using python and make explorations.
+4. Generate visualization using Tableau.
 
 # Elements
 
