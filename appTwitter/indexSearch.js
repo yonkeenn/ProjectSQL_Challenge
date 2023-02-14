@@ -1,6 +1,7 @@
 console.log(":::This the starting point for this project:::");
-var fetch = require('node-fetch');
+const fetch = require('node-fetch');
 require('dotenv').config();
+
 
 // Call API Twitter:
 // Search/recent endpoint:
@@ -33,3 +34,5 @@ async function getapi() {
     console.log(data);
 
 };
+
+getapi();
