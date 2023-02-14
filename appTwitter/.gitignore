@@ -1,4 +1,2 @@
 node_modules
-indexSearch.js
-indexStream.js
-config.js
+.env
