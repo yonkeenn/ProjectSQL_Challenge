@@ -4,15 +4,15 @@ require('dotenv').config();
 
 
 // Call API Twitter:
-// Search/recent endpoint:
+// search/recent endpoint:
 // -----------------------
 
 const endpoint = 'https://api.twitter.com/2/tweets/search/recent';
 const queryParams = {
-    'query': 'from:nytimes',
-    'max':  100,
-    'tweet.fields': 'attachments,author_id,context_annotations,created_at,conversation_id,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets,source,text,withheld',
-    'expansions': 'author_id&user.fields=description'
+    'query': '("heat pump" OR "heat pumps") lang:en -is:retweet',
+    'tweet.fields': 'author_id,context_annotations,created_at,entities,id,lang,public_metrics,source,text',
+    'expansions': 'author_id&user.fields=description',
+    'max':  10
 };
 
 const api_url =`${endpoint}?query=${queryParams.query}&max_results=${queryParams.max}&tweet.fields=${queryParams['tweet.fields']}&expansions=${queryParams.expansions}`;
@@ -27,12 +27,27 @@ async function getapi() {
     };
 
     // Storing response
-    const response = await fetch(api_url, optionsGet);
-    //const response = await fetch(api_url);
-    const data = await response.json();
-    const jdata = JSON.stringify(data);
-    console.log(data);
+    try {
+        const response = await fetch(api_url, optionsGet);
+        const response_json = await response.json();
+        const dataJson = JSON.stringify(response_json);
+        //console.log(Object.keys(response_json));
+        //console.log(response_json['data'][5]);
+        //console.log(response_json['includes']['users'][0]);
+        //console.log(response_json['meta']);
+        for (let key in response_json){
+            if (key == 'data'){
+                console.log(Object.keys(response_json[key]['0']));
+            }
+            
+        };
+    } catch(e) {
+        console.log(e);
+        throw e;
+    };
 
-};
+    
+};  
+
 
 getapi();
